@@ -3,9 +3,9 @@ head{
     color:#3c75e6;
     stroke: 1px;
     font-size: 12px;
-    padding: 10px;
-    border: none;
-    border-radius: 2px;
+    color: white;
+    padding: 15px;
+    text-align: center;
 
 }
 
