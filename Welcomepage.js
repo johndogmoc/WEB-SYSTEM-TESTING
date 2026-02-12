@@ -1,1 +1,0 @@
-console.log("Welcomepage to my project of Pet animixon");
