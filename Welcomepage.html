@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="Welcomepage.css">
 </head>
 <body>
-    
-    <h1>Welcome to Pet Animixon!</h1>
-    
-    <nav>
-        <a href="About.html">About</a>
-        <a href="Categories.html">Categories</a>
-    </nav>
+    <header>
+        <h1>🐾 Pet Animixon</h1>
+        <nav>
+            <a href="Welcomepage.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Categories.html">Categories</a>
+        </nav>
+    </header>
 
-    <p1>Discover a world of adorable pets and heartwarming stories. Join our community of pet lovers and share your own furry friends' adventures.</p1>
+    <div class="hero">
+        <p>Everything your pet needs from the everyday to the extraordinary</p>
+        <div class="buttons-container">
+            <button class="btn1" onclick="window.location.href='Categories.html'">Shop Products</button>
+            <button class="btn2" onclick="window.location.href='Categories.html'">Browse Categories</button>
+        </div>
+    </div>
 
-
-    <textarea name="message" rows="2" cols="50">
-        Share your pet storiesss!!!!
-    </textarea>
-
-    <p2 id="demo" style="display:none">Woof!
-Meow!
-Chirp!</p2>
-
-    <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me NOW!</button>
+    <div class="section">
+        <h3>Share Your Pet Stories</h3>
+        <textarea name="message" rows="3" cols="50" placeholder="Tell us about your pet!"></textarea>
+        <button type="button" onclick="alert('Thanks for sharing!')">Submit Story</button>
+    </div>
 
     <footer>
        <p>&copy; 2026 Pet Animixon. All rights reserved.</p>
