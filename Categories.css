@@ -1,7 +1,8 @@
 body {
     background-color: #f5e8d1;
     font-family: Arial, sans-serif;
-    padding: 10px;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
@@ -35,9 +36,7 @@ p2 {
 
 a {
     color: #3f62a7;
-    border: 2px solid #3f62a7;
     padding: 5px;
-    text-decoration: none;
     border-radius: 4px;
     margin: 10px;
 
