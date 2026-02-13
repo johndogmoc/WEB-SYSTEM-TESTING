@@ -1,32 +1,17 @@
-head{
-    background-color: #E5E7EB;
-    color:#3c75e6;
-    stroke: 1px;
-    font-size: 12px;
-    color: white;
-    padding: 15px;
-    text-align: center;
-
-}
-
 body {
     background-color: #f5e8d1;
-    color:#3c75e6;
-    stroke: 1px;
-    font-size: 16px;
+    font-family: Arial, sans-serif;
     padding: 10px;
-    border: none;
-    border-radius: 2px;
-
 }
+
 h1 {
- color: #e76d26;
-    stroke: 3px;
+    color: #e76d26;
+    text-align: center;
 }
+
 p1 {
-
     color: red;
-
+    text-align: center;
 }
 
 a {
@@ -35,5 +20,26 @@ a {
     padding: 5px;
     text-decoration: none;
     border-radius: 4px;
-    word-spacing: 4px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
 }
