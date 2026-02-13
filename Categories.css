@@ -4,8 +4,17 @@ body {
     padding: 10px;
 }
 
+header {
+    background-color: white;
+    padding: 20px 0 0 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
 h1 {
-    color: #3f62a7;
+    color: #e76d26;
+    font-size: 28px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -32,4 +41,20 @@ a {
     border-radius: 4px;
     margin: 10px;
 
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e76d26;
 }

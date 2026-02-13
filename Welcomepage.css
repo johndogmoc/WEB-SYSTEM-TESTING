@@ -48,7 +48,6 @@ nav a:hover {
     font-size: 18px;
     max-width: 500px;
     margin: 0 auto 40px;
-    line-height: 1.5;
 }
 
 .buttons-container {
@@ -82,7 +81,6 @@ nav a:hover {
     padding: 12px 30px;
     font-size: 16px;
     border-radius: 25px;
-    cursor: pointer;
     border: 2px solid #e76d26;
     font-weight: bold;
 }
