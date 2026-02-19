@@ -20,7 +20,8 @@ h1 {
     color: #e76d26;
     font-size: 28px;
     float: left;
-    
+    margin-left: 40px;
+    margin-top: -8px;
 }
 
 nav {
@@ -212,4 +213,24 @@ footer {
 
 .learn-more:hover {
     text-decoration: underline;
+}
+
+.skills-box {
+    background-color: rgb(149, 128, 238);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skills-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-box li {
+    color: white;
+    padding: 5px 0;
 }
