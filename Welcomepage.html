@@ -1,54 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Carry - Portfolio</title>
+    <title>John Carry Dogmoc - Portfolio</title>
     <link rel="stylesheet" href="Welcomepage.css">
 </head>
+
 <body>
+
     <header>
-        <h1>John Carry</h1>
-        <nav>
-            <a href="Welcomepage.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Categories.html">Categories</a>
-        </nav>
+        <div class="header-inner">
+            <span class="logo">John Carry Dogmoc</span>
+            <nav>
+                <a href="Welcomepage.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Categories.html">Projects</a>
+            </nav>
+        </div>
     </header>
 
+    <!-- main intro part or something -->
     <div class="hero">
-        <div class="hero-content">
-            <p>Hi, I'm John Carry. I do web development and design. I like building things that work well and look good.</p>
-            <div class="buttons-container">
-                <button class="btn1" onclick="window.location.href='About.html'">About Me</button>
-                <button class="btn2" onclick="window.location.href='Categories.html'">View Work</button>
-            </div>
-        </div>
-        
-        <div class="hero-image">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23ff9966' width='300' height='300' rx='30'/%3E%3C/svg%3E" alt="Profile">
+        <p class="greeting">Hi, I'm</p>
+        <h1>John Carry Dogmoc</h1>
+        <p class="tagline">Web Developer & Designer</p>
+        <p class="bio">I build clean, functional websites using HTML, CSS, and JavaScript. I enjoy turning simple ideas
+            into well-structured and easy-to-use web pages.</p>
+        <div class="hero-buttons">
+            <button onclick="window.location.href='About.html'">About Me</button>
+            <button class="outline" onclick="window.location.href='Categories.html'">View Projects</button>
         </div>
     </div>
 
-    <div class="info-section">
-        <div class="info-content">
-            <h2>About Me</h2>
-            <p>I'm a web developer focused on making clean and user-friendly websites. I work with HTML, CSS, and JavaScript to turn ideas into sites that everyone can enjoy.</p>
-            <a href="About.html" class="learn-more">Learn More →</a>
-        </div>
+    <hr class="line">
+
+    <!-- about me short summary -->
+    <div class="about-strip">
+        <h2>A Little About Me!</h2>
+        <p>I'm a web developer who loves to create things that are both functional and visually appealing.</p>
+        <a href="About.html" class="link-arrow">Learn More →</a>
     </div>
 
-    <div class="skills-box">
-        <h3>What I use</h3>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Responsive layouts</li>
+    <div class="complete_project">
+        <h1>Complete Projects</h1>
+        <p>Here are some of the projects I've completed so far:</p>
+        <ul class="project-list">
+            <li>
+                <span class="proj-title">🌐 Personal Portfolio Website</span>
+                <span class="proj-desc">A personal website built with HTML & CSS to showcase my work and skills.</span>
+            </li>
+            <li>
+                <span class="proj-title">📋 Web System Projects</span>
+                <span class="proj-desc">School-based web systems developed as part of my web development
+                    coursework.</span>
+            </li>
+            <li>
+                <span class="proj-title">🏫 School Web System Projects</span>
+                <span class="proj-desc">Various institutional projects including forms, dashboards, and data
+                    systems.</span>
+            </li>
+            <li>
+                <span class="proj-title">📱 Responsive Layouts Practice</span>
+                <span class="proj-desc">Practice projects focused on mobile-friendly and adaptive page design.</span>
+            </li>
         </ul>
     </div>
 
+    <!-- my skills -->
+    <div class="skills-strip">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>UI/UX Basics</li>
+            <li>Git & GitHub</li>
+            <li>PHP Basics</li>
+        </ul>
+    </div>
+
+    <!-- some of my projects -->
+    <div class="projects-strip">
+        <h2>Featured Projects</h2>
+        <p class="section-sub">A few things I've been working on.</p>
+
+        <div class="project-cards">
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3>Personal Portfolio</h3>
+                <p>A simple personal website built with HTML and CSS to showcase my work and skills.</p>
+                <span class="card-tag">HTML</span>
+                <span class="card-tag">CSS</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📋</div>
+                <h3>Web System Projects</h3>
+                <p>Various school-based web systems developed as part of my web development coursework.</p>
+                <span class="card-tag">HTML</span>
+                <span class="card-tag">JavaScript</span>
+                <span class="card-tag">PHP</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📱</div>
+                <h3>Responsive Layouts</h3>
+                <p>Practice projects focused on building mobile-friendly and adaptive page layouts.</p>
+                <span class="card-tag">CSS</span>
+                <span class="card-tag">Flexbox</span>
+            </div>
+        </div>
+
+        <div class="center-link">
+            <a href="Categories.html" class="link-arrow">See All Projects →</a>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <div class="contact-strip">
+        <h2>Get in Touch</h2>
+        <p>Have a question or want to work together? Feel free to contact me!.</p>
+        <div class="contact-details">
+            <p>john.dogmoc@urios.edu.ph</p>
+            <p>Philippines</p>
+        </div>
+    </div>
+
     <footer>
-       <p>&copy; 2026 John Carry. All rights reserved.</p>
+        <p>&copy; 2026 John Carry Dogmoc. All rights reserved.</p>
     </footer>
+
 </body>
+
 </html>
