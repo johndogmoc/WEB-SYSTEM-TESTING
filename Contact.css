@@ -98,25 +98,6 @@ nav a:hover {
     text-align: center;
 }
 
-.section-icon {
-    font-size: 52px;
-    flex-shrink: 0;
-}
-
-.section-text h2 {
-    font-size: 26px;
-    color: #222;
-    margin-bottom: 16px;
-}
-
-.section-text p {
-    font-size: 15px;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 14px;
-    text-align: left;
-}
-
 .section-inner.centered h2 {
     font-size: 26px;
     color: #222;
@@ -129,76 +110,40 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* ── SKILLS GRID ── */
-.skills-sub {
-    font-size: 15px;
-    color: #555;
-    margin-bottom: 32px;
-}
-
-.skills-grid {
+/* ── CONTACT LAYOUT ── */
+.contact-layout {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    max-width: 900px;
-    margin: 0 auto;
+    gap: 24px;
+    align-items: flex-start;
+    margin-top: 24px;
     width: 100%;
+    max-width: 900px;
 }
 
-.skill-item {
+/* ── CONTACT PANEL ── */
+.contact-panel {
+    flex: 1;
     background-color: white;
     border: 1px solid #e5e5e5;
-    border-top: 3px solid #e76d26;
-    border-radius: 8px;
-    padding: 16px 24px;
-    font-size: 15px;
-    font-weight: bold;
+    border-radius: 10px;
+    padding: 20px 22px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    text-align: left;
+}
+
+.contact-panel h3 {
+    font-size: 18px;
     color: #222;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-width: 150px;
-    justify-content: center;
+    margin-bottom: 8px;
 }
 
-.skill-icon {
-    font-size: 20px;
-}
-
-/* ── EDUCATION ── */
-.edu-item {
-    background-color: white;
-    border: 1px solid #e5e5e5;
-    border-left: 4px solid #e76d26;
-    border-radius: 8px;
-    padding: 20px 24px;
-    margin-top: 8px;
-}
-
-.edu-item h3 {
-    font-size: 16px;
-    color: #222;
-    margin-bottom: 6px;
-}
-
-.edu-item p {
+.contact-panel-text {
     font-size: 14px;
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
-.edu-tag {
-    font-size: 12px;
-    background-color: #f5e8d1;
-    color: #e76d26;
-    padding: 3px 12px;
-    border-radius: 12px;
-    border: 1px solid #e8c99a;
-    font-weight: 600;
-}
-
-/* ── CONTACT INFO (About page bottom) ── */
+/* ── CONTACT INFO ── */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -209,6 +154,72 @@ nav a:hover {
 .contact-info p {
     font-size: 15px;
     color: #444;
+}
+
+/* ── CONTACT FORM ── */
+.contact-form {
+    margin-top: 0;
+    max-width: 480px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 24px 24px 28px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    text-align: left;
+    flex: 1;
+}
+
+.contact-field {
+    margin-bottom: 16px;
+}
+
+.contact-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    outline: none;
+    border-color: #e76d26;
+    box-shadow: 0 0 0 2px rgba(231, 109, 38, 0.15);
+}
+
+/* ── BUTTON ── */
+button {
+    padding: 12px 32px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #e76d26;
+    background-color: #e76d26;
+    color: white;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+button:hover {
+    background-color: #c95d1e;
+    border-color: #c95d1e;
 }
 
 /* ── FOOTER ── */
@@ -240,8 +251,14 @@ footer {
         gap: 24px;
     }
 
-    .section-icon {
-        font-size: 40px;
+    .contact-layout {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .contact-panel,
+    .contact-form {
+        width: 100%;
     }
 }
 
@@ -268,9 +285,8 @@ footer {
         padding: 40px 16px;
     }
 
-    .skill-item {
-        min-width: 120px;
-        padding: 12px 16px;
-        font-size: 14px;
+    button {
+        width: 100%;
+        text-align: center;
     }
 }

@@ -1,0 +1,191 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #fafafa;
+   color: #333;
+   overflow-x: hidden;
+   width: 100%;
+}
+
+/* ── HEADER ── */
+header {
+   background-color: white;
+   border-bottom: 1px solid #ddd;
+   padding: 16px 60px;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   width: 100%;
+}
+
+.header-inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.logo {
+   font-size: 20px;
+   font-weight: bold;
+   color: #e76d26;
+}
+
+nav a {
+   color: #444;
+   text-decoration: none;
+   margin-left: 32px;
+   font-size: 15px;
+   transition: color 0.2s;
+}
+
+nav a:hover {
+   color: #e76d26;
+}
+
+/* ── PAGE HERO ── */
+.page-hero {
+   background-color: #fafafa;
+   padding: 70px 60px 50px;
+   text-align: center;
+   border-bottom: 1px solid #e5e5e5;
+   width: 100%;
+}
+
+.page-hero h1 {
+   font-size: 40px;
+   color: #222;
+   margin-bottom: 10px;
+}
+
+.page-sub {
+   font-size: 16px;
+   color: #555;
+}
+
+/* ── PROJECT GRID ── */
+.project-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 24px;
+   max-width: 1200px;
+   width: 100%;
+   margin: 50px auto 60px;
+   padding: 0 60px;
+}
+
+/* ── PROJECT CARDS ── */
+.proj-card {
+   background-color: white;
+   border: 1px solid #e5e5e5;
+   border-top: 3px solid #e76d26;
+   border-radius: 10px;
+   padding: 28px 24px;
+   text-align: left;
+   cursor: pointer;
+   transition: transform 0.22s ease, box-shadow 0.22s ease, border-top-color 0.22s ease;
+}
+
+.proj-card:hover {
+   transform: translateY(-6px) scale(1.02);
+   box-shadow: 0 16px 36px rgba(231, 109, 38, 0.15);
+   border-top-color: #c95d1e;
+}
+
+.proj-icon {
+   font-size: 30px;
+   margin-bottom: 14px;
+}
+
+.proj-card h3 {
+   font-size: 17px;
+   color: #222;
+   margin-bottom: 10px;
+}
+
+.proj-card p {
+   font-size: 14px;
+   color: #555;
+   line-height: 1.7;
+   margin-bottom: 16px;
+}
+
+/* ── TAG PILLS ── */
+.proj-tags {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 6px;
+}
+
+.proj-tags span {
+   display: inline-block;
+   background-color: #f5e8d1;
+   color: #e76d26;
+   font-size: 12px;
+   padding: 4px 12px;
+   border-radius: 12px;
+   border: 1px solid #e8c99a;
+   font-weight: 600;
+}
+
+/* ── FOOTER ── */
+footer {
+   text-align: center;
+   padding: 32px 20px;
+   font-size: 14px;
+   color: #999;
+   border-top: 1px solid #eee;
+   width: 100%;
+}
+
+/* ── RESPONSIVE: TABLET (≤768px) ── */
+@media (max-width: 768px) {
+   header {
+      padding: 14px 24px;
+   }
+
+   .page-hero {
+      padding: 50px 24px 36px;
+   }
+
+   .project-grid {
+      padding: 0 24px;
+      margin: 30px auto 40px;
+   }
+
+   .proj-card {
+      max-width: 100%;
+   }
+}
+
+/* ── RESPONSIVE: MOBILE (≤480px) ── */
+@media (max-width: 480px) {
+   header {
+      padding: 12px 16px;
+   }
+
+   .logo {
+      font-size: 16px;
+   }
+
+   nav a {
+      margin-left: 14px;
+      font-size: 13px;
+   }
+
+   .page-hero h1 {
+      font-size: 28px;
+   }
+
+   .project-grid {
+      grid-template-columns: 1fr;
+      padding: 0 16px;
+   }
+}

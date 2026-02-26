@@ -27,6 +27,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -41,6 +43,7 @@ nav a {
     text-decoration: none;
     margin-left: 32px;
     font-size: 15px;
+    transition: color 0.2s;
 }
 
 nav a:hover {
@@ -125,10 +128,11 @@ button.outline:hover {
 
 /* ── ABOUT STRIP ── */
 .about-strip {
-    background-color: #f0f4ff;
+    background-color: #f5e8d1;
     padding: 80px 60px;
     text-align: center;
     width: 100%;
+    border-top: 1px solid #e8c99a;
 }
 
 .about-strip h2 {
@@ -141,7 +145,7 @@ button.outline:hover {
     font-size: 15px;
     color: #555;
     line-height: 1.8;
-    max-width: 100%;
+    max-width: 640px;
     margin: 0 auto 24px;
 }
 
@@ -155,60 +159,6 @@ button.outline:hover {
 .link-arrow:hover {
     text-decoration: underline;
 }
-
-
-/* ── COMPLETE PROJECTS STRIP ── */
-.complete_project {
-    background-color: white;
-    padding: 60px 40px;
-    border-top: 1px solid #eee;
-    text-align: left;
-    max-width: 900px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.complete_project h1 {
-    font-size: 28px;
-    color: #222;
-    margin-bottom: 12px;
-}
-
-.complete_project>p {
-    font-size: 15px;
-    color: #666;
-    margin-bottom: 24px;
-}
-
-.project-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.project-list li {
-    border: 1px solid #e0e0e0;
-    padding: 16px;
-    border-radius: 6px;
-    margin-bottom: 12px;
-    list-style: none;
-    /* Removing bullet since we have borders now */
-}
-
-.proj-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    display: block;
-    margin-bottom: 4px;
-}
-
-.proj-desc {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-}
-
 
 /* ── SKILLS STRIP ── */
 .skills-strip {
@@ -231,7 +181,8 @@ button.outline:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 14px;
-    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .skills-list li {
@@ -270,15 +221,18 @@ button.outline:hover {
     gap: 28px;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .card {
     background-color: white;
     border: 1px solid #e5e5e5;
+    border-top: 3px solid #e76d26;
     border-radius: 10px;
     padding: 32px 28px;
-    flex: 1 1 260px;
+    flex: 1 1 240px;
+    max-width: 300px;
     text-align: left;
 }
 
@@ -310,6 +264,7 @@ button.outline:hover {
     margin-right: 6px;
     margin-top: 4px;
     border: 1px solid #e8c99a;
+    font-weight: 600;
 }
 
 .center-link {
@@ -318,9 +273,9 @@ button.outline:hover {
 
 /* ── CONTACT STRIP ── */
 .contact-strip {
-    background-color: #f0f4ff;
+    background-color: #f5e8d1;
     padding: 80px 60px;
-    border-top: 1px solid #dde5f5;
+    border-top: 1px solid #e8c99a;
     text-align: center;
     width: 100%;
 }
@@ -387,6 +342,10 @@ footer {
     .line {
         width: calc(100% - 48px);
     }
+
+    .card {
+        max-width: 100%;
+    }
 }
 
 /* ── RESPONSIVE: MOBILE (≤480px) ── */
@@ -444,6 +403,7 @@ footer {
     .card {
         flex: unset;
         width: 100%;
+        max-width: 100%;
     }
 
     .line {
